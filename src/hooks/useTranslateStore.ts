@@ -23,6 +23,7 @@ const reducer = (state: ISTate, action: IActionReducer): ISTate => {
       ...state,
       fromLanguage: state.toLanguage,
       toLanguage: state.fromLanguage,
+      fromText: state.result,
       result: '',
       loading
     }

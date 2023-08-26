@@ -2,7 +2,7 @@ import './App.css'
 import useTranslateStore from './hooks/useTranslateStore'
 import { Container, Row, Col, Button, Stack } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { AUTO_LANGUAGE, SUPPORTED_LANGUAGES } from './constants'
+import { AUTO_LANGUAGE } from './constants'
 import { ArrowsIcon } from './components/Icons'
 import { LanguageSelector } from './components/LanguageSelector'
 import { TextArea } from './components/TextArea'
@@ -13,7 +13,7 @@ import type { Language } from './types'
 const getTranslatedText = (lang: Language): string => {
   if (lang === 'es') return '🇪🇸 Traducido al español'
   if (lang === 'en') return '🇬🇧 Translated to English'
-  if (lang === 'de') return '🇩🇪 Text ins Deutsche übersetzt'
+  if (lang === 'de') return '🇩🇪 Ins Deutsche übersetzt'
   return ''
 }
 
